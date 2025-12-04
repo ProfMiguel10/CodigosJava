@@ -1,0 +1,26 @@
+public class TiposPrimitivos {
+    public static void main(String[] args) {
+
+        // Tipos inteiros
+        byte numByte = 10;          
+        short numShort = 300;       
+        int numInt = 20000;         
+        long numLong = 150000L;     
+        // Tipo lógico
+        boolean ativo = true;       
+        // Tipo caractere
+        char letra = 'M';           
+        // Tipos de ponto flutuante
+        float numFloat = 7.75f;     
+        double numDouble = 19.99;   
+        // Impressão dos valores
+        System.out.println("byte: " + numByte);
+        System.out.println("short: " + numShort);
+        System.out.println("int: " + numInt);
+        System.out.println("long: " + numLong);
+        System.out.println("boolean: " + ativo);
+        System.out.println("char: " + letra);
+        System.out.println("float: " + numFloat);
+        System.out.println("double: " + numDouble);
+    }
+}
