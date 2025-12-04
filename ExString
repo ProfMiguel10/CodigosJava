@@ -1,0 +1,43 @@
+
+public class ExString {
+    public static void main(String[] args) {
+        String texto = "   Java é incrível!   ";
+        String nome = "Miguel";
+        // length() – tamanho da string
+        System.out.println("length(): " + texto.length());
+        // trim() – remove espaços do início e do final
+        System.out.println("trim(): '" + texto.trim() + "'");
+        // toUpperCase() / toLowerCase()
+        System.out.println("toUpperCase(): " + texto.toUpperCase());
+        System.out.println("toLowerCase(): " + texto.toLowerCase());
+        // charAt() – pega um caractere pela posição
+        System.out.println("charAt(2): " + texto.charAt(2));
+        // substring() – recorta parte da string
+        System.out.println("substring(3): " + texto.substring(3));
+        System.out.println("substring(3, 7): " + texto.substring(3, 7));
+        // contains() – verifica se contém
+        System.out.println("contains(\"Java\"): " + texto.contains("Java"));
+        // startsWith() / endsWith()
+        System.out.println("startsWith(\"Java\"): " + texto.trim().startsWith("Java"));
+        System.out.println("endsWith(\"!\"): " + texto.trim().endsWith("!"));
+        // equals() / equalsIgnoreCase()
+        System.out.println("equals(\"Miguel\"): " + nome.equals("Miguel"));
+        System.out.println("equalsIgnoreCase(\"miguel\"): " + nome.equalsIgnoreCase("miguel"));
+        // indexOf() / lastIndexOf()
+        System.out.println("indexOf('a'): " + texto.indexOf('a'));
+        System.out.println("lastIndexOf('a'): " + texto.lastIndexOf('a'));
+        // replace() – troca caracteres ou textos
+        System.out.println("replace('a', '@'): " + texto.replace('a', '@'));
+        // split() – divide texto em partes
+        String[] palavras = texto.trim().split(" ");
+        System.out.println("split():");
+        for (String p : palavras) {
+            System.out.println(" - " + p);
+        }
+        // isEmpty() / isBlank()
+        String vazio = "";
+        String espacos = "   ";
+        System.out.println("isEmpty(): " + vazio.isEmpty());
+        System.out.println("isBlank(): " + espacos.isBlank());
+    }
+}
